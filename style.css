@@ -1,0 +1,52 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+  background-color: #FCFBEF;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+h1.bg-title{
+  color: #F8B06F;
+
+
+}
+#pricelist{
+  background-color:#FCFBEF ;
+}
+.navbar{
+  background-color: #F8B06F;
+}
+
+#questions{
+  background-color: #FCFBEF;
+}
+.h1{
+  color: #F8B06F;
+}
+#mix{
+  background-color: #F8B06F ;
+}
+.btn-posh{
+  color: #fbfbfb;
+  background-color: #F8B06F;
+}
+.accordion-header-h2 {
+  margin-bottom: 0;
+  font-weight: 600;
+  color:#F8B06F;
+}
+.accordion-button:not(.collapsed) {
+  color: #ac5110;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
