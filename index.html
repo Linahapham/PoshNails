@@ -18,23 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">Posh Nails Fishponds</a>
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2LKXxk8gLbfTfC8Y1clad60_-INjodi4ZdST4sx4pezjH7A5qELe0A4b0Fa8n1_8H-AfuRj00J?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,8 +50,8 @@
         </div>
     </section>
 
-     <!-- our story Sections -->
-     <section id="learn" class="p-5">
+    <!-- our story Sections -->
+    <section id="learn" class="p-5">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md">
@@ -76,14 +60,21 @@
                 <div class="col-md p-5">
                     <h2>Our Story</h2>
                     <p class="lead">
-                        Welcome to Posh Nails Salon, where every visit is an indulgent experience crafted just for you. Step into our sanctuary of beauty and relaxation, where skilled technicians and luxurious treatments await to pamper you from head to toe. 
+                        Welcome to Posh Nails Salon, where every visit is an indulgent experience crafted just for you.
+                        Step into our sanctuary of beauty and relaxation, where skilled technicians and luxurious
+                        treatments await to pamper you from head to toe.
                     </p>
                     <p>
-                        At Posh Nails, we believe that self-care is not just a luxury, but a necessity. Our mission is to provide a haven where you can escape the hustle and bustle of daily life, and immerse yourself in a world of tranquility and rejuvenation.
-                    
-        
+                        At Posh Nails, we believe that self-care is not just a luxury, but a necessity. Our mission is
+                        to provide a haven where you can escape the hustle and bustle of daily life, and immerse
+                        yourself in a world of tranquility and rejuvenation.
+
+
                     </p>
-                    <p>But Posh Nails Salon is more than just a place for beauty treatments; it's a community where friendships flourish, and confidence blooms. We cherish the connections we build with each of our clients, and we strive to create a warm and welcoming atmosphere where you feel valued and appreciated.</p>
+                    <p>But Posh Nails Salon is more than just a place for beauty treatments; it's a community where
+                        friendships flourish, and confidence blooms. We cherish the connections we build with each of
+                        our clients, and we strive to create a warm and welcoming atmosphere where you feel valued and
+                        appreciated.</p>
                     <a href="#" class="btn btn-posh mt-3">
                         <i class="bi bi-chevron-right"></i> Book Now
                     </a>
@@ -94,26 +85,67 @@
 
     <!-- Background image -->
     <!-- Showcase -->
-    <section id="pricelist" class=" text-light mb-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section id="pricelist" class="text-light mb-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
                     <h1 class="bg-title">Treatments <span class="text-warning"> Prices </span></h1>
-                    <p class=" text-dark my-4">
+                    <p class="text-dark my-4">
                         We focus on teaching our students the fundamentals of the latest
                         and greatest technologies to prepare them for their first dev role
                     </p>
-                    <button class="btn btn-posh btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#enroll">
-                        Explore
-                    </button>
+
                 </div>
-                <img class="./img-fluid w-50 d-none d-sm-block" src="img/Mask group copy.png" alt="" />
+                <table id="tablepricelist" class="table table-success table-striped mt-5">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Service</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <td>Service 1</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td>Service 2</td>
+                            <td>$60</td>
+                        </tr>
+                        <tr>
+                            <td>Service 3</td>
+                            <td>$70</td>
+                        </tr>
+                        <tr>
+                            <td>Service 4</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <td>Service 5</td>
+                            <td>$90</td>
+                        </tr>
+                        <tr>
+                            <td>Service 6</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Service 7</td>
+                            <td>$110</td>
+                        </tr>
+                        <tr>
+                            <td>Service 8</td>
+                            <td>$120</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
+
         </div>
     </section>
 
-   
+
+
 
     <!--Grid-->
     <section>
@@ -124,7 +156,8 @@
                 <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                     <img src="./img/p1.png" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-                    <img src="./img/p2.png" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+                    <img src="./img/p2.png" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
                 </div>
 
                 <div class="col-lg-3 mb-4 mb-lg-0">
@@ -152,9 +185,9 @@
 
     </section>
 
-      <!--Mix and match -->
+    <!--Mix and match -->
 
-      <section id="mix">
+    <section id="mix">
         <div class="container">
             <h1 class="text-center text-light  mb-4">Mix and Match Polish</h1>
             <div class="row">
@@ -197,7 +230,7 @@
                                 alt="Boat on Calm Water" /></div>
                         <div class="col-md-6"><img src="./img/poweracy.png" class="w-100 shadow-1-strong rounded mb-4"
                                 alt="Boat on Calm Water" />
-                            
+
                         </div>
                     </div>
 
@@ -210,23 +243,30 @@
 
     </section>
 
-    
+
 
     <!-- Boxes -->
     <section class="p-5">
         <div class="container">
             <h1 class="text-center bg-title mt-3 mb-4">News and Refined Trends</h1>
             <p class="text-center">
-                Looking to elevate your nail game with the latest trends? Look no further! From timeless classics to cutting-edge styles, we've got you covered with three must-try nail trends that are guaranteed to make a statement. Get ready to embrace the chic allure of cool-girl chrome, the elegant sophistication of French tips, and the mesmerizing gradient effect of ombre nails. Whether you're aiming for edgy, classy, or subtle glamour, these trends offer endless possibilities to express your unique style and nail it every time!</p>
+                Looking to elevate your nail game with the latest trends? Look no further! From timeless classics to
+                cutting-edge styles, we've got you covered with three must-try nail trends that are guaranteed to make a
+                statement. Get ready to embrace the chic allure of cool-girl chrome, the elegant sophistication of
+                French tips, and the mesmerizing gradient effect of ombre nails. Whether you're aiming for edgy, classy,
+                or subtle glamour, these trends offer endless possibilities to express your unique style and nail it
+                every time!</p>
             <div class="row text-center g-4">
                 <div class="col-md">
                     <div class="card ">
                         <img src="./img/french.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Fancy French</h5>
-                          <p class="card-text">
-                            Elevate your style with the timeless sophistication of French tips, adding a touch of classic elegance to every look.</p>
-                          <a href="https://www.pinterest.com.au/barbara3589/classic-french-manicure/" class="btn btn-posh">Inspiration</a>
+                            <h5 class="card-title">Fancy French</h5>
+                            <p class="card-text">
+                                Elevate your style with the timeless sophistication of French tips, adding a touch of
+                                classic elegance to every look.</p>
+                            <a href="https://www.pinterest.com.au/barbara3589/classic-french-manicure/"
+                                class="btn btn-posh">Inspiration</a>
                         </div>
                     </div>
                 </div>
@@ -234,9 +274,11 @@
                     <div class="card ">
                         <img src="./img/chrome-nails 1.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Cool-girls Chrome</h5>
-                          <p class="card-text">Indulge in the futuristic allure of cool-girl chrome nails, adding a sleek and edgy metallic touch to your manicure.</p>
-                          <a href="https://www.pinterest.com.au/search/pins/?rs=ac&len=2&q=chrome%20nails&eq=chro&etslf=4342" class="btn btn-posh">Inspiration</a>
+                            <h5 class="card-title">Cool-girls Chrome</h5>
+                            <p class="card-text">Indulge in the futuristic allure of cool-girl chrome nails, adding a
+                                sleek and edgy metallic touch to your manicure.</p>
+                            <a href="https://www.pinterest.com.au/search/pins/?rs=ac&len=2&q=chrome%20nails&eq=chro&etslf=4342"
+                                class="btn btn-posh">Inspiration</a>
                         </div>
                     </div>
                 </div>
@@ -244,10 +286,12 @@
                     <div class="card ">
                         <img src="./img/ombrenail.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Ombre Nails</h5>
-                          <p class="card-text">Blending seamlessly, creating a breathtaking gradient that's as dynamic as it is elegant. </p>
-                        </br> 
-                          <a href="https://www.pinterest.com.au/ZafiraKo/ombre-nail-designs/" class="btn btn-posh">Inspiration</a>
+                            <h5 class="card-title">Ombre Nails</h5>
+                            <p class="card-text">Blending seamlessly, creating a breathtaking gradient that's as dynamic
+                                as it is elegant. </p>
+                            </br>
+                            <a href="https://www.pinterest.com.au/ZafiraKo/ombre-nail-designs/"
+                                class="btn btn-posh">Inspiration</a>
                         </div>
                     </div>
                 </div>
@@ -255,14 +299,14 @@
         </div>
     </section>
 
-   
 
-    
-  
 
-     <!-- contact-->
 
-     <section class=" text-light p-5 mb-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+
+
+    <!-- contact-->
+
+    <section class=" text-light p-5 mb-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <img class="img-fluid w-50 d-none d-sm-block " src="./img/contact.png" alt="" />
@@ -292,8 +336,8 @@
                 <!-- Item 1 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header-h2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-one">
+                        <button class="accordion-button collapsed accordion-header-h2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#question-one">
                             Where exactly are you located?
                         </button>
                     </h2>
@@ -310,8 +354,8 @@
                 <!-- Item 2 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header-h2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-two">
+                        <button class="accordion-button collapsed accordion-header-h2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#question-two">
                             How much does it cost to attend?
                         </button>
                     </h2>
@@ -330,8 +374,8 @@
                 <!-- Item 3 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header text-ex">
-                        <button class="accordion-button collapsed accordion-header-h2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-three">
+                        <button class="accordion-button collapsed accordion-header-h2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#question-three">
                             Can I book an appointment online?
                         </button>
                     </h2>
@@ -344,8 +388,8 @@
                 <!-- Item 4 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header-h2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-four">
+                        <button class="accordion-button collapsed accordion-header-h2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#question-four">
                             "Do you provide nail art services?
                         </button>
                     </h2>
@@ -360,8 +404,8 @@
                 <!-- Item 5 -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header-h2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-five">
+                        <button class="accordion-button collapsed accordion-header-h2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#question-five">
                             What does a typical pedicure involve?
                         </button>
                     </h2>
@@ -377,7 +421,7 @@
         </div>
     </section>
 
-    
+
 
 
     <!-- Footer -->
@@ -447,24 +491,28 @@
                     </div>
                 </div>
                 <div class="container d-flex justify-content-center py-5">
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                      <i class="fab fa-facebook-f"></i>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                        style="background-color: #54456b;">
+                        <i class="fab fa-facebook-f"></i>
                     </button>
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                      <i class="fab fa-youtube"></i>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                        style="background-color: #54456b;">
+                        <i class="fab fa-youtube"></i>
                     </button>
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                      <i class="fab fa-instagram"></i>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                        style="background-color: #54456b;">
+                        <i class="fab fa-instagram"></i>
                     </button>
-                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                      <i class="fab fa-twitter"></i>
+                    <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                        style="background-color: #54456b;">
+                        <i class="fab fa-twitter"></i>
                     </button>
-                  </div>
+                </div>
             </section>
             <!-- Section: Text -->
 
             <!-- Section: Social -->
-           
+
             <!-- Section: Social -->
         </div>
         <!-- Grid container -->

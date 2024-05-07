@@ -16,37 +16,50 @@ body::before {
     width: 50%;
   }
 }
-h1.bg-title{
+
+h1.bg-title {
   color: #F8B06F;
 
 
 }
-#pricelist{
-  background-color:#FCFBEF ;
+
+#pricelist {
+  background-color: #FCFBEF;
 }
-.navbar{
+
+.navbar {
   background-color: #F8B06F;
 }
 
-#questions{
+#questions {
   background-color: #FCFBEF;
 }
-.h1{
+
+.h1 {
   color: #F8B06F;
 }
-#mix{
-  background-color: #F8B06F ;
+
+#mix {
+  background-color: #F8B06F;
 }
-.btn-posh{
+
+.btn-posh {
   color: #fbfbfb;
   background-color: #F8B06F;
 }
+
 .accordion-header-h2 {
   margin-bottom: 0;
   font-weight: 600;
-  color:#F8B06F;
+  color: #F8B06F;
 }
+
 .accordion-button:not(.collapsed) {
   color: #ac5110;
   background-color: #e7f1ff;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+#tablepricelist {
+  background-color: #FCFBEF;
+}
