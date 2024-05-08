@@ -52,7 +52,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color: #fff;
+    background-color: #FCFBEF;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
@@ -5023,7 +5023,7 @@ fieldset:disabled .btn {
     font-size: 1rem;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: #f7e6c1;
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
