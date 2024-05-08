@@ -9,26 +9,6 @@ body::before {
   background-color: #FCFBEF;
 }
 
-.bg-image {
-  height: 100vh;
-  background-size: cover; /* Ensure the background image covers the entire container */
-  background-position: center; /* Center the background image */
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .bg-image {
-      background-image: url('./img/landing1.png');
-      background-repeat: no-repeat;
-      background-size: 140% auto; /* Adjust the size based on width (full width, auto height) */
-    }
-}
-
-@media only screen and (min-width: 768px) {
-  .bg-image {
-      background-image: url('./img/background.png');
-  }
-}
-
 #map {
   width: 100%;
   height: 100%;
