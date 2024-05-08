@@ -21,6 +21,10 @@ body::before {
       background-repeat: no-repeat;
       background-size: 140% auto; /* Adjust the size based on width (full width, auto height) */
     }
+
+    iframe{
+      width: 99%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
