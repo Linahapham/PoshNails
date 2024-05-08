@@ -20,22 +20,15 @@ body::before {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .bg-image {
-<<<<<<< HEAD
-    background-image: url('./img/p7.png');
+    background-image: url('./img/landing1.png');
     background-repeat: no-repeat;
     background-size: 140% auto;
     /* Adjust the size based on width (full width, auto height) */
   }
-=======
-      background-image: url('./img/landing1.png');
-      background-repeat: no-repeat;
-      background-size: 140% auto; /* Adjust the size based on width (full width, auto height) */
-    }
 
-    iframe{
-      width: 99%;
-    }
->>>>>>> f4e702043bb27b0024e65a3b105de6ad35c691ad
+  iframe {
+    width: 99%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
