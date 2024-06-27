@@ -135,14 +135,19 @@
 
 })(jQuery);
 
-document.getElementById('seeMoreBtn').addEventListener('click', function () {
-    var hiddenItems = document.querySelectorAll('.hidden-item');
-    hiddenItems.forEach(function (item) {
-        if (item.style.display === 'none' || item.style.display === '') {
-            item.style.display = 'block';
-        } else {
-            item.style.display = 'none';
-        }
+document.querySelectorAll('button[data-target]').forEach(function(button) {
+    button.addEventListener('click', function () {
+        var targetClass = this.getAttribute('data-target');
+        var hiddenItems = document.querySelectorAll('.' + targetClass + ' .hidden-item');
+
+        hiddenItems.forEach(function (item) {
+            if (item.style.display === 'none' || item.style.display === '') {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        this.textContent = this.textContent === 'See Less' ? 'See More' : 'See Less';
     });
-    this.textContent = this.textContent === 'See More' ? 'See Less' : 'See More';
 });

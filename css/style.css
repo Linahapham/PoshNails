@@ -12,6 +12,18 @@
     .hidden-item {
         display: none;
     }
+
+    .hide-desktop{
+        display: inline !important;
+    }
+}
+
+.hidden-item{
+    display: none;
+}
+
+.hide-desktop{
+    display: none;
 }
 
 
