@@ -135,43 +135,156 @@
 
 })(jQuery);
 
-document.addEventListener('DOMContentLoaded', function () {
-    const filterButtons = document.querySelectorAll('[data-filter]');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const seeMoreButton = document.getElementById('seeMoreBtn');
+//old gallery
+// document.addEventListener('DOMContentLoaded', function () {
+//     const filterButtons = document.querySelectorAll('[data-filter]');
+//     const galleryItems = document.querySelectorAll('.gallery-item');
+//     const seeMoreButton = document.getElementById('seeMoreBtn');
+//     let showAll = true; // Flag to track whether all items are shown or hidden initially
 
+//     // Initial setup: Hide all hidden items
+//     const hiddenItems = document.querySelectorAll('.gallery-item.hidden-item');
+//     hiddenItems.forEach(item => {
+//         item.style.display = 'none';
+//     });
+
+//     filterButtons.forEach(button => {
+//         button.addEventListener('click', function (e) {
+//             e.preventDefault();
+//             const filter = this.getAttribute('data-filter');
+
+//             filterButtons.forEach(btn => btn.classList.remove('active'));
+//             this.classList.add('active');
+
+//             galleryItems.forEach(item => {
+//                 if (filter === 'all' || item.classList.contains(filter)) {
+//                     item.style.display = 'block';
+//                 } else {
+//                     item.style.display = 'none';
+//                 }
+//             });
+
+//             // Toggle visibility of See More button based on filter
+//             toggleSeeMoreButtonVisibility(filter);
+//         });
+//     });
+
+//     seeMoreButton.addEventListener('click', function () {
+//         // Toggle display of hidden items
+//         hiddenItems.forEach(item => {
+//             item.style.display = showAll ? 'block' : 'none';
+//         });
+
+//         // Toggle button text
+//         this.textContent = showAll ? 'See Less' : 'See More';
+//         showAll = !showAll; // Toggle flag
+//     });
+
+//     function toggleSeeMoreButtonVisibility(filter) {
+//         if (filter === 'all') {
+//             seeMoreButton.style.display = 'block';
+//             seeMoreButton.classList.remove('text-start'); // Remove Bootstrap's text-start class
+//             seeMoreButton.classList.add('text-center'); // Add text-center class to center align
+//         } else {
+//             seeMoreButton.style.display = 'none';
+//         }
+//     }
+// });
+
+//new gallery
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    const showMoreLessBtn = document.getElementById('show-more-less-btn');
+    const imagesPerPage = 4;
+    let visibleImages = imagesPerPage;
+    let isExpanded = false;
+
+    // Filter buttons event listeners
     filterButtons.forEach(button => {
-        button.addEventListener('click', function (e) {
-            e.preventDefault();
-            const filter = this.getAttribute('data-filter');
-
+        button.addEventListener('click', function() {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
-
-            galleryItems.forEach(item => {
-                item.style.display = (filter === 'all' || item.classList.contains(filter)) ? 'block' : 'none';
-            });
-
-            // Reset See More button text and visibility
-            resetSeeMoreButton();
+            const filterValue = this.getAttribute('data-filter');
+            filterImages(filterValue);
+            if (filterValue === 'all' && isExpanded) {
+                showMoreLessBtn.textContent = 'Show Less';
+            } else if (filterValue === 'all') {
+                showMoreLessBtn.textContent = 'Show More';
+            } else {
+                showMoreLessBtn.style.display = 'none';
+            }
         });
     });
 
-    seeMoreButton.addEventListener('click', function () {
-        const hiddenItems = document.querySelectorAll('.gallery-item.hidden-item');
-        hiddenItems.forEach(item => {
-            item.style.display = (item.style.display === 'block' ? 'none' : 'block');
-        });
-
-        this.textContent = this.textContent === 'See More' ? 'See Less' : 'See More';
+    // Show more/less button functionality
+    showMoreLessBtn.addEventListener('click', function() {
+        if (isExpanded) {
+            visibleImages = imagesPerPage;
+            isExpanded = false;
+            this.textContent = 'Show More';
+        } else {
+            visibleImages = galleryImages.length;
+            isExpanded = true;
+            this.textContent = 'Show Less';
+        }
+        showImages();
     });
 
-    function resetSeeMoreButton() {
-        const hiddenItems = document.querySelectorAll('.gallery-item.hidden-item');
-        hiddenItems.forEach(item => {
-            item.style.display = 'none';
+    // Function to filter images based on category
+    function filterImages(category) {
+        let index = 0;
+        galleryImages.forEach(image => {
+            const imageCategory = image.getAttribute('data-category');
+            if (category === 'all' || category === imageCategory) {
+                image.style.display = 'block';
+                if (index < visibleImages) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+                index++;
+            } else {
+                image.style.display = 'none';
+            }
         });
-        seeMoreButton.textContent = 'See More';
+        toggleShowMoreLessButton(category);
     }
+
+    // Function to show images up to visibleImages limit
+    function showImages() {
+        let index = 0;
+        galleryImages.forEach(image => {
+            if (index < visibleImages) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+            index++;
+        });
+    }
+
+    // Function to toggle show more/less button visibility
+    function toggleShowMoreLessButton(category) {
+        if (category === 'all') {
+            if (visibleImages >= galleryImages.length) {
+                showMoreLessBtn.textContent = 'Show Less';
+            } else {
+                showMoreLessBtn.textContent = 'Show More';
+            }
+            showMoreLessBtn.style.display = 'block';
+        } else {
+            showMoreLessBtn.style.display = 'none';
+        }
+    }
+
+    // Initial show images
+    filterImages('all');
 });
+
+
+
+
+
+
 
