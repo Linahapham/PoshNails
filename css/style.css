@@ -5,6 +5,9 @@
 
 /* Show hidden items on small screens */
 @media (max-width: 767.98px) {
+    .hide-hours{
+        display: none;
+    }
     .hidden-item {
         display: block !important;
     }
