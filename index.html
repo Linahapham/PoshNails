@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sparlex - Spa Website Template</title>
+    <title>Posh Nails</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -474,15 +474,17 @@
                         <form>
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
-                                    <input type="text" class="form-control py-3 border-white bg-transparent text-white"
-                                        placeholder="First Name">
+                                    <input type="text" id="name"
+                                        class="form-control py-3 border-white bg-transparent text-white"
+                                        placeholder="Full Name">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="email" class="form-control py-3 border-white bg-transparent text-white"
+                                    <input type="email" id="email"
+                                        class="form-control py-3 border-white bg-transparent text-white"
                                         placeholder="Email">
                                 </div>
                                 <div class="col-lg-6">
-                                    <select class="form-select py-3 border-white bg-transparent"
+                                    <select id="service" class="form-select py-3 border-white bg-transparent"
                                         aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
@@ -494,7 +496,7 @@
                                     </select>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="date" class="form-control py-3 border-white bg-transparent">
+                                    <input type="date" id="date" class="form-control py-3 border-white bg-transparent">
                                 </div>
                                 <div class="col-lg-12">
                                     <textarea class="form-control border-white bg-transparent text-white" name="text"
@@ -549,145 +551,100 @@
     </div>
     <!-- Appointment End -->
     <!-- Gallery Start -->
-<div class="container-fluid gallery py-5" id="gallery">
-    <div class="container py-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-            <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
-            <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
-        </div>
-        <div class="tab-class text-center">
-            <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                        data-bs-toggle="pill" href="#tab-1">
-                        <span class="text-dark" style="width: 150px;">All Gallery</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-2">
-                        <span class="text-dark" style="width: 150px;">chrome nails</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-3">
-                        <span class="text-dark" style="width: 150px;">flower nails</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-4">
-                        <span class="text-dark" style="width: 150px;">acrylic design</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#tab-5">
-                        <span class="text-dark" style="width: 150px;">french tips</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div id="tab-1" class="tab-pane fade show p-0 active">
-                    <div class="row g-4">
-                        <div class="col-lg-12">
-                            <div class="row g-4 gallery-content">
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g1.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g1.png" data-lightbox="Gallery-1" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
+    <div class="container-fluid gallery py-5" id="gallery">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+                <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                            data-bs-toggle="pill" href="#all" data-filter="all">
+                            <span class="text-dark" style="width: 150px;">All Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#chrome" data-filter="chrome">
+                            <span class="text-dark" style="width: 150px;">Chrome Nails</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#flower" data-filter="flower">
+                            <span class="text-dark" style="width: 150px;">Flower Nails</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#acrylic" data-filter="acrylic">
+                            <span class="text-dark" style="width: 150px;">Acrylic Design</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#french" data-filter="french">
+                            <span class="text-dark" style="width: 150px;">French Tips</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="all" class="tab-pane fade show active p-0">
+                        <div class="row g-4 gallery-content">
+                            <!-- Gallery Items -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g1.png" alt="Chrome Nails">
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g2.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g2.png" data-lightbox="Gallery-2" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g3.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g3.png" data-lightbox="Gallery-2" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g4.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g4.png" data-lightbox="Gallery-2" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more images here in similar fashion -->
-                                <!-- Hidden items initially on small screens -->
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item hidden-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g5.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g5.png" data-lightbox="Gallery-3" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item hidden-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g6.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g6.png" data-lightbox="Gallery-3" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item hidden-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g7.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g7.png" data-lightbox="Gallery-3" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-6 gallery-item hidden-item">
-                                    <div class="gallery-img">
-                                        <img class="img-fluid rounded w-100" src="img/g8.png" alt="">
-                                        <div class="gallery-overlay p-4"></div>
-                                        <div class="search-icon">
-                                            <a href="img/g7.png" data-lightbox="Gallery-3" class="my-auto"><i
-                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Continue adding hidden items as needed -->
                             </div>
-                            <div class="text-center mt-4">
-                                <button id="seeMoreBtn" class="btn btn-primary hide-desktop" data-target="gallery-content">See More</button>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g2.png" alt="Flower Nails">
+                                </div>
                             </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g3.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g4.png" alt="French Tips">
+                                </div>
+                            </div>
+                            <!-- Hidden Items Initially -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g5.png" alt="Chrome Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g6.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g7.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g8.png" alt="French Tips">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button id="seeMoreBtn" class="btn btn-primary" data-target="gallery-content">See
+                                More</button>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat similar structure for other tabs -->
             </div>
         </div>
     </div>
-</div>
 
 
     <!-- Gallery Start 

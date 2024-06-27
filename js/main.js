@@ -135,19 +135,43 @@
 
 })(jQuery);
 
-document.querySelectorAll('button[data-target]').forEach(function(button) {
-    button.addEventListener('click', function () {
-        var targetClass = this.getAttribute('data-target');
-        var hiddenItems = document.querySelectorAll('.' + targetClass + ' .hidden-item');
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const seeMoreButton = document.getElementById('seeMoreBtn');
 
-        hiddenItems.forEach(function (item) {
-            if (item.style.display === 'none' || item.style.display === '') {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            const filter = this.getAttribute('data-filter');
+
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            galleryItems.forEach(item => {
+                item.style.display = (filter === 'all' || item.classList.contains(filter)) ? 'block' : 'none';
+            });
+
+            // Reset See More button text and visibility
+            resetSeeMoreButton();
+        });
+    });
+
+    seeMoreButton.addEventListener('click', function () {
+        const hiddenItems = document.querySelectorAll('.gallery-item.hidden-item');
+        hiddenItems.forEach(item => {
+            item.style.display = (item.style.display === 'block' ? 'none' : 'block');
         });
 
-        this.textContent = this.textContent === 'See Less' ? 'See More' : 'See Less';
+        this.textContent = this.textContent === 'See More' ? 'See Less' : 'See More';
     });
+
+    function resetSeeMoreButton() {
+        const hiddenItems = document.querySelectorAll('.gallery-item.hidden-item');
+        hiddenItems.forEach(item => {
+            item.style.display = 'none';
+        });
+        seeMoreButton.textContent = 'See More';
+    }
 });
+

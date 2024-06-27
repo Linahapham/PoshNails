@@ -1,3 +1,42 @@
+/* General styles for hidden items */
+.hidden-item {
+    display: none;
+}
+
+/* Show hidden items on small screens */
+@media (max-width: 767.98px) {
+    .hidden-item {
+        display: block !important;
+    }
+}
+
+/* Gallery styles */
+.gallery {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-img img {
+    border-radius: 15px;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .gallery-item {
+        display: none; /* Hide all by default */
+    }
+
+    /* Show first 8 items by default */
+    .gallery-item:nth-child(-n+8) {
+        display: block;
+    }
+}
+
+
 /**New **/
 @media (max-width: 767.98px) {
     .carousel-image {
