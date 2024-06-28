@@ -314,6 +314,12 @@
     min-height: 100vh
 }
 
+@media (max-width: 700px){
+    .carousel-item {
+        min-height: 66vh
+    }
+}
+
 .carousel-item img {
     position: absolute;
     width: 100%;
