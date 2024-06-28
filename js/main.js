@@ -283,6 +283,54 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//EmailJS
+function sendMail() {
+    // Get form field values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+  
+    // Get warning message element
+    var warningMessage = document.getElementById("warning-message");
+  
+    // Check if any field is empty
+    if (name === "" || email === "" || message === "") {
+      warningMessage.textContent = "Please fill out all fields.";
+      warningMessage.style.color = "red";
+      return; // Exit function if any field is empty
+    }
+  
+    // Check if email is in valid format
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      warningMessage.textContent = "Please enter a valid email address.";
+      warningMessage.style.color = "red";
+      return; // Exit function if email format is invalid
+    }
+  
+    // If all fields are filled and email format is valid, proceed with sending email
+    var serviceID = "service_ccasjyt";
+    var templateID = "template_0fxuoyb";
+  
+    var params = {
+      name: name,
+      email: email,
+      message: message
+    };
+  
+    emailjs.send(serviceID, templateID, params)
+      .then(res => {
+        // Clear form fields after successful submission
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message was sent successfully!");
+        warningMessage.textContent = ""; // Clear warning message
+      })
+      .catch(err => console.log(err));
+  }
+
 
 
 

@@ -30,6 +30,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "LmNvozU4hoMp_HhUt",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -50,9 +61,10 @@
                     <div class="col-lg-8">
                         <div class="d-flex flex-wrap">
 
-                            <a href="tel:+441173126388" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>0117
+                            <a href="tel:+441173126388" class="me-4 text-light"><i
+                                    class="fas fa-phone-alt text-primary me-2"></i>0117
                                 312 6388</a>
-                            <a href="mailto:poshnailsfishponds@outlook.com"class="text-light"><i
+                            <a href="mailto:poshnailsfishponds@outlook.com" class="text-light"><i
                                     class="fas fa-envelope text-primary me-2"></i>poshnailsfishponds@outlook.com</a>
                         </div>
 
@@ -365,7 +377,8 @@
                 </div>
                 <div class="col-12">
                     <div class="services-btn text-center">
-                        <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Book
+                        <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                            class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Book
                             Now</a>
                     </div>
                 </div>
@@ -422,7 +435,8 @@
 
                     </div>
 
-                    <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Get Gift Cards</a>
+                    <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                        class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Get Gift Cards</a>
                 </div>
             </div>
         </div>
@@ -455,8 +469,9 @@
                 <div class="col-lg-6">
                     <div class="appointment-form p-5">
                         <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
-                        <h1 class="display-4 mb-4 text-white">Get Appointment</h1>
+                        <h1 class="display-4 mb-4 text-white">Send us a message</h1>
                         <form>
+                            <div id="warning-message" style="margin-bottom: 16px;"></div>
                             <div class="row gy-3 gx-4">
                                 <div class="col-lg-6">
                                     <input type="text" id="name"
@@ -468,29 +483,14 @@
                                         class="form-control py-3 border-white bg-transparent text-white"
                                         placeholder="Email">
                                 </div>
-                                <div class="col-lg-6">
-                                    <select id="service" class="form-select py-3 border-white bg-transparent"
-                                        aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                        <option value="4">One</option>
-                                        <option value="5">Two</option>
-                                        <option value="6">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="date" id="date" class="form-control py-3 border-white bg-transparent">
+
+                                <div class="col-lg-12">
+                                    <textarea class="form-control border-white bg-transparent text-white" name="message"
+                                        id="message" cols="30" rows="5" placeholder="Write Comments"></textarea>
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea class="form-control border-white bg-transparent text-white" name="text"
-                                        id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="button"
-                                        class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT
-                                        NOW</button>
+                                        <button class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5" id="submit" type="button" onclick="sendMail()">Submit</button>
+
                                 </div>
                             </div>
                         </form>
@@ -703,7 +703,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Aplly builder in bottle</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Apply polish</p>
 
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -724,7 +725,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Base gel application</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -746,7 +748,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Foot massage</p>
 
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -768,7 +771,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
 
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -790,7 +794,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
 
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -812,7 +817,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Biab application</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -833,7 +839,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Cuticle care</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Hand massage</p>
                             <p><i class="fa fa-times text-danger  me-2"></i>Polish application</p>
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -855,7 +862,8 @@
                             <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
 
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -876,7 +884,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
                             <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
@@ -897,7 +906,8 @@
                             <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
                             <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
                             <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
-                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                            <a href="https://booksy.com/en-gb/77692_posh-nails-fishponds_nail-salon_1033813_bristol#ba_s=seo"
+                                class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
                                 Now</a>
                         </div>
                     </div>
