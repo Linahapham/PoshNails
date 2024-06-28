@@ -50,6 +50,13 @@
     transform: scale(1.1);
 }
 
+/* Responsive layout for phones */
+@media (max-width: 768px) {
+    .gallery-image {
+        width: calc(100% - 20px); /* Full width on small screens */
+    }
+}
+
 
 /* General styles for hidden items */
 .hidden-item {
