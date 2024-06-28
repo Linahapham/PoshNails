@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.gallery-filter-btn');
     const galleryImages = document.querySelectorAll('.gallery-image');
     const showMoreLessBtn = document.getElementById('show-more-less-btn');
-    const imagesPerPage = 4;
+    const imagesPerPage = 8;
     let visibleImages = imagesPerPage;
     let isExpanded = false;
 
