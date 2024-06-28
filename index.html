@@ -551,1266 +551,655 @@
     </div>
     <!-- Appointment End -->
 
-    <div class="gallery-container">
-        <div class="gallery-filters">
-            <button class="gallery-filter-btn active" data-filter="all">All</button>
-            <button class="gallery-filter-btn" data-filter="chrome">Chrome</button>
-            <button class="gallery-filter-btn" data-filter="flower">Flower</button>
-            <button class="gallery-filter-btn" data-filter="acrylic">Acrylic</button>
-            <button class="gallery-filter-btn" data-filter="french">French</button>
+
+    <!--Gallery Start-->
+    <div class="gallery-container container-fluid gallery">
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+            <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+            <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
         </div>
-        <div class="gallery">
-            <!-- Images -->
-            <div class="gallery-image" data-category="chrome">
-                <img src="./img/chr1.png" alt="Chrome Image">
-            </div>
-            <div class="gallery-image" data-category="chrome">
-                <img src="./img/chr1.png" alt="Chrome Image">
-            </div>
-            <div class="gallery-image" data-category="chrome">
-                <img src="./img/chr1.png" alt="Chrome Image">
-            </div>
-    
-            <div class="gallery-image" data-category="flower">
-                <img src="./img/fl1.png" alt="Flower Image">
-            </div>
-            <div class="gallery-image" data-category="flower">
-                <img src="./img/fl1.png" alt="Flower Image">
-            </div>
-            <div class="gallery-image" data-category="flower">
-                <img src="./img/fl1.png" alt="Flower Image">
-            </div>
-            <div class="gallery-image" data-category="flower">
-                <img src="./img/fl1.png" alt="Flower Image">
-            </div>
-    
-            <div class="gallery-image" data-category="acrylic">
-                <img src="./img/acrylic.png" alt="Acrylic Image">
-            </div>
-            <div class="gallery-image" data-category="acrylic">
-                <img src="./img/acrylic.png" alt="Acrylic Image">
-            </div>
-    
-            <div class="gallery-image" data-category="french">
-                <img src="./img/fb1.png" alt="French Image">
-            </div>
-            <div class="gallery-image" data-category="french">
-                <img src="./img/fb1.png" alt="French Image">
-            </div>
-        </div>
-        <div class="gallery-actions">
-            <button id="show-more-less-btn">Show More</button>
-        </div>
-    </div>
 
-    <!-- Gallery Start -->
-    <div class="container-fluid gallery py-5" id="gallery">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-                <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
-                <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
-            </div>
-            <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                            data-bs-toggle="pill" href="#all" data-filter="all">
-                            <span class="text-dark" style="width: 150px;">All Gallery</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#chrome" data-filter="chrome">
-                            <span class="text-dark" style="width: 150px;">Chrome Nails</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#flower" data-filter="flower">
-                            <span class="text-dark" style="width: 150px;">Flower Nails</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#acrylic" data-filter="acrylic">
-                            <span class="text-dark" style="width: 150px;">Acrylic Design</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#french" data-filter="french">
-                            <span class="text-dark" style="width: 150px;">French Tips</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="all" class="tab-pane fade show active p-0">
-                        <div class="row g-4 gallery-content">
-                            <!-- Gallery Items -->
-                            <!-- chrome Items -->
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/chr1.png" alt="Chrome Nails">
+        <div class="tab-class text-center">
+            <ul class="gallery-filters nav nav-pills d-inline-flex justify-content-center mb-5">
+                <li class="nav-item">
+                    <a class="gallery-filter-btn d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#all" data-filter="all">
+                        <span class="text-dark" style="width: 150px;">All Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="gallery-filter-btn d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#all" data-filter="chrome">
+                        <span class="text-dark" style="width: 150px;">Chrome</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="gallery-filter-btn d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#all" data-filter="flower">
+                        <span class="text-dark" style="width: 150px;">Flower</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="gallery-filter-btn d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#all" data-filter="acrylic">
+                        <span class="text-dark" style="width: 150px;">Acrylic</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="gallery-filter-btn d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#all" data-filter="french">
+                        <span class="text-dark" style="width: 150px;">French</span>
+                    </a>
+                </li>
+            </ul>
 
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/chr2.png" alt="Chrome Nails">
-
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/chr3.png" alt="Chrome Nails">
-
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/chr4.png" alt="Chrome Nails">
-
-                                </div>
-
-                            </div>
-                            <!-- flowers Items -->
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl1.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower ">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl2.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl3.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl4.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <!-- acrylic Items -->
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/om1.png" alt="Acrylic Design">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/om2.png" alt="Acrylic Design">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/om3.png" alt="Acrylic Design">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/om4.png" alt="Acrylic Design">
-                                </div>
-                            </div>
-                            <!-- french tips Items -->
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/french1.png" alt="French Tips">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/french2.png" alt="French Tips">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/french3.png" alt="French Tips">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/french4.png" alt="French Tips">
-                                </div>
-                            </div>
-                            <!-- Hidden Items Initially -->
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/g5.png" alt="Chrome Nails">
-                                </div>
-                            </div>
-                            <!-- flowers Items -->
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl5.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl6.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl7.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/fl8.png" alt="Flower Nails">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/g7.png" alt="Acrylic Design">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/french8.png" alt="Acrylic Design">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french hidden-item">
-                                <div class="gallery-img">
-                                    <img class="img-fluid rounded w-100" src="img/g8.png" alt="French Tips">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <button id="seeMoreBtn" class="btn btn-primary text-center" data-target="gallery-content">See
-                                More</button>
-                        </div>
-                    </div>
+            <div class="gallery">
+                <!-- Images -->
+                <div class="gallery-image" data-category="chrome">
+                    <img src="./img/chr1.png" alt="Chrome Image">
                 </div>
+                <div class="gallery-image" data-category="chrome">
+                    <img src="./img/chr1.png" alt="Chrome Image">
+                </div>
+                <div class="gallery-image" data-category="chrome">
+                    <img src="./img/chr1.png" alt="Chrome Image">
+                </div>
+
+                <div class="gallery-image" data-category="flower">
+                    <img src="./img/fl1.png" alt="Flower Image">
+                </div>
+                <div class="gallery-image" data-category="flower">
+                    <img src="./img/fl1.png" alt="Flower Image">
+                </div>
+                <div class="gallery-image" data-category="flower">
+                    <img src="./img/fl1.png" alt="Flower Image">
+                </div>
+                <div class="gallery-image" data-category="flower">
+                    <img src="./img/fl1.png" alt="Flower Image">
+                </div>
+
+                <div class="gallery-image" data-category="acrylic">
+                    <img src="./img/acrylic.png" alt="Acrylic Image">
+                </div>
+                <div class="gallery-image" data-category="acrylic">
+                    <img src="./img/acrylic.png" alt="Acrylic Image">
+                </div>
+
+                <div class="gallery-image" data-category="french">
+                    <img src="./img/fb1.png" alt="French Image">
+                </div>
+                <div class="gallery-image" data-category="french">
+                    <img src="./img/fb1.png" alt="French Image">
+                </div>
+            </div>
+            <div class="gallery-actions text-center">
+                <button class="btn btn-primary text-center" id="show-more-less-btn" style=" margin-left: auto;
+  margin-right: auto;">Show More</button>
             </div>
         </div>
-    </div>
 
-
-    <!-- Gallery Start 
-    <div class="container-fluid gallery py-5" id="gallery">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-                <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
-                <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
-            </div>
-            <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
-                            data-bs-toggle="pill" href="#tab-1">
-                            <span class="text-dark" style="width: 150px;">All Gallery</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-2">
-                            <span class="text-dark" style="width: 150px;">chrome nails</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-3">
-                            <span class="text-dark" style="width: 150px;">flower nails</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-4">
-                            <span class="text-dark" style="width: 150px;">acrylic design</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                            href="#tab-5">
-                            <span class="text-dark" style="width: 150px;">french tips</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show p-0 active">
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g1.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g1.png" data-lightbox="Gallery-1" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g2.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g2.png" data-lightbox="Gallery-2" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g3.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g3.png" data-lightbox="Gallery-3" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g4.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g4.png" data-lightbox="Gallery-4" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g5.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g5.png" data-lightbox="Gallery-5" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g6.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g6.png" data-lightbox="Gallery-6" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g7.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g7.png" data-lightbox="Gallery-7" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/g8.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/g8.png" data-lightbox="Gallery-8" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-pane fade show p-0">
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/chr1.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/chr1.png" data-lightbox="Gallery-9" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/chr2.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/chr2.png" data-lightbox="Gallery-10" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/chr3.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/chr3.png" data-lightbox="Gallery-11" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/chr4.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/chr4.png" data-lightbox="Gallery-12" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-3" class="tab-pane fade show p-0 active">
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl1.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl1.png" data-lightbox="Gallery-1" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl2.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl2.png" data-lightbox="Gallery-2" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl3.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl3.png" data-lightbox="Gallery-3" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl4.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl4.png" data-lightbox="Gallery-4" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl5.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl5.png" data-lightbox="Gallery-5" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl6.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl6.png" data-lightbox="Gallery-6" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl7.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl7.png" data-lightbox="Gallery-7" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/fl8.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/fl8.png" data-lightbox="Gallery-8" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-4" class="tab-pane fade show p-0">
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/om1.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/om1.png" data-lightbox="Gallery-17" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/om2.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/om2.png" data-lightbox="Gallery-18" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/om3.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/om3.png" data-lightbox="Gallery-19" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/om4.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/om4.png" data-lightbox="Gallery-20" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-5" class="tab-pane fade show p-0">
-                        <div class="row g-4">
-                            <div class="col-lg-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french1.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french1.png" data-lightbox="Gallery-21" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french2.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french2.png" data-lightbox="Gallery-22" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french3.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french3.png" data-lightbox="Gallery-23" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french4.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french4.png" data-lightbox="Gallery-24" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french5.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french5.png" data-lightbox="Gallery-25" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french6.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french6.png" data-lightbox="Gallery-26" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french7.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french7.png" data-lightbox="Gallery-26" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="gallery-img">
-                                            <img class="img-fluid rounded w-100" src="img/french8.png" alt="">
-                                            <div class="gallery-overlay p-4">
-
-                                            </div>
-                                            <div class="search-icon">
-                                                <a href="img/french8.png" data-lightbox="Gallery-26" class="my-auto"><i
-                                                        class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- gallery End -->
-
-
-    <!-- Pricing Start -->
-    <div class="container-fluid pricing py-5 " id="price-section">
-        <div class="container py-5">
-            <div class="owl-carousel pricing-carousel">
-                <div class="pricing-item">
-                    <div class="rounded pricing-content">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>38<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Biab + Gel</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail shape & file</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Cuticle cutting</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Aplly builder in bottle</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Apply polish</p>
-
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>27<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Gel Polish</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Cuticle care</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Base gel application</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>42<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Pedicure + Gel</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Shaping & cuticle care</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Foot scrub</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Foot massage</p>
-
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>37<small class="text-muted"
-                                    style="font-size: 16px; line-height: 40px;"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Full Set Acrylic</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail extensions</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Acrylic application</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>32<small class="text-muted"
-                                    style="font-size: 16px; line-height: 40px;"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Acrylic Infill</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Existing acrylics removal</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Reapplication of acrylic</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>45<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Full Set Biab</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail extensions</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Biab application</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>15<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Manicure</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Cuticle care</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Hand massage</p>
-                            <p><i class="fa fa-times text-danger  me-2"></i>Polish application</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>10<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Gel removal</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Safe removal of Gel nails</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
-                            <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
-
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>15<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Biab removal</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Safe removal of Biab nails</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
-                            <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-content rounded">
-                        <div
-                            class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                            <h1 class="display-4 mb-0">
-                                <small class="align-top text-muted"
-                                    style="font-size: 22px; line-height: 45px;">£</small>15<small
-                                    class="text-muted"></small>
-                            </h1>
-                            <h5 class="text-primary text-uppercase m-0">Acrylic removal</h5>
-                        </div>
-                        <div class="p-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Safe removal of acrylic nails</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
-                            <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
-                            <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pricing End -->
+        <div class="m-5"></div>
+        <!--Gallery End-->
 
 
 
-
-        <!-- What Our Clients Say Start -->
-        <div class="container-fluid testimonial py-5" id="feedback">
+        <!-- Pricing Start -->
+        <div class="container-fluid pricing py-5 " id="price-section">
             <div class="container py-5">
-                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <div class="owl-carousel pricing-carousel">
+                    <div class="pricing-item">
+                        <div class="rounded pricing-content">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>38<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Biab + Gel</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail shape & file</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Cuticle cutting</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Aplly builder in bottle</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Apply polish</p>
 
-                    <h1 class="display-4 mb-4 text-primary">What Our Clients Say!</h1>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>27<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Gel Polish</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Cuticle care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Base gel application</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>42<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Pedicure + Gel</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Shaping & cuticle care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Foot scrub</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Foot massage</p>
+
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>37<small class="text-muted"
+                                        style="font-size: 16px; line-height: 40px;"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Full Set Acrylic</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail extensions</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Acrylic application</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
+
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>32<small class="text-muted"
+                                        style="font-size: 16px; line-height: 40px;"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Acrylic Infill</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Existing acrylics removal</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Reapplication of acrylic</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
+
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>45<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Full Set Biab</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail extensions</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Biab application</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Shaping and filing</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Polish application</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>15<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Manicure</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Cuticle care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Hand massage</p>
+                                <p><i class="fa fa-times text-danger  me-2"></i>Polish application</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>10<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Gel removal</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Safe removal of Gel nails</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
+                                <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
+
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>15<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Biab removal</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Safe removal of Biab nails</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
+                                <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div
+                                class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted"
+                                        style="font-size: 22px; line-height: 45px;">£</small>15<small
+                                        class="text-muted"></small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Acrylic removal</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Safe removal of acrylic nails</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Nail shaping</p>
+                                <p><i class="fa fa-times text-danger me-2"></i>Cuticle cutting</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Cuticle oil application</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item rounded p-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="d-flex flex-column mx-auto">
-                                    <div class="rounded-circle mb-4"
-                                        style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="img/fb3.png" class="img-fluid rounded-circle" alt="">
-                                    </div>
-                                    <div class="text-center">
-                                        <h6 class="mb-2 text-primary">Full Set/ Powder</h6>
+            </div>
+            <!-- Pricing End -->
 
+
+
+
+            <!-- What Our Clients Say Start -->
+            <div class="container-fluid testimonial py-5" id="feedback">
+                <div class="container py-5">
+                    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+
+                        <h1 class="display-4 mb-4 text-primary">What Our Clients Say!</h1>
+                    </div>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item rounded p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="d-flex flex-column mx-auto">
+                                        <div class="rounded-circle mb-4"
+                                            style="border: dashed; border-color: var(--bs-white);">
+                                            <img src="img/fb3.png" class="img-fluid rounded-circle" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h6 class="mb-2 text-primary">Full Set/ Powder</h6>
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="position-absolute" style="top: 20px; right: 25px;">
-                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="d-flex mb-4">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
+                                <div class="col-8">
+                                    <div class="position-absolute" style="top: 20px; right: 25px;">
+                                        <i class="fa fa-quote-right fa-2x text-secondary"></i>
                                     </div>
-                                    <p class="fs-5 mb-0 text-white">Amazing service got just what I asked for they was
-                                        amazing with my daughter and even painted her nails lovely people
-                                        will definitely be coming back...
-                                    </p>
+                                    <div class="testimonial-content">
+                                        <div class="d-flex mb-4">
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5 mb-0 text-white">Amazing service got just what I asked for they
+                                            was
+                                            amazing with my daughter and even painted her nails lovely people
+                                            will definitely be coming back...
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item rounded p-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="d-flex flex-column mx-auto">
-                                    <div class="rounded-circle mb-4"
-                                        style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="img/fb1.png" class="img-fluid rounded-circle" alt="">
-                                    </div>
-                                    <div class="text-center">
-                                        <h6 class="mb-2 text-primary">Remove BIAB & redone</h6>
+                        <div class="testimonial-item rounded p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="d-flex flex-column mx-auto">
+                                        <div class="rounded-circle mb-4"
+                                            style="border: dashed; border-color: var(--bs-white);">
+                                            <img src="img/fb1.png" class="img-fluid rounded-circle" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h6 class="mb-2 text-primary">Remove BIAB & redone</h6>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="position-absolute" style="top: 20px; right: 25px;">
-                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="d-flex mb-4">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
+                                <div class="col-8">
+                                    <div class="position-absolute" style="top: 20px; right: 25px;">
+                                        <i class="fa fa-quote-right fa-2x text-secondary"></i>
                                     </div>
-                                    <p class="fs-5 mb-0 text-white">Have been coming here since February, and I am
-                                        always
-                                        happy with my nails, Lou Lea and Toi do an amazing job and fast
-                                        too! All the technicians are friendly and there is a great atmosphere....
+                                    <div class="testimonial-content">
+                                        <div class="d-flex mb-4">
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5 mb-0 text-white">Have been coming here since February, and I am
+                                            always
+                                            happy with my nails, Lou Lea and Toi do an amazing job and fast
+                                            too! All the technicians are friendly and there is a great atmosphere....
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item rounded p-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="d-flex flex-column mx-auto">
-                                    <div class="rounded-circle mb-4"
-                                        style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="img/fb2.png" class="img-fluid rounded-circle" alt="">
-                                    </div>
-                                    <div class="text-center">
-                                        <h6 class="mb-2 text-primary">Gel on toes</h6>
+                        <div class="testimonial-item rounded p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="d-flex flex-column mx-auto">
+                                        <div class="rounded-circle mb-4"
+                                            style="border: dashed; border-color: var(--bs-white);">
+                                            <img src="img/fb2.png" class="img-fluid rounded-circle" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h6 class="mb-2 text-primary">Gel on toes</h6>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="position-absolute" style="top: 20px; right: 25px;">
-                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="d-flex mb-4">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
+                                <div class="col-8">
+                                    <div class="position-absolute" style="top: 20px; right: 25px;">
+                                        <i class="fa fa-quote-right fa-2x text-secondary"></i>
                                     </div>
-                                    <p class="fs-5 mb-0 text-white">The staff is absolutely amazing! Talented girls who
-                                        made
-                                        both me and my friend seem so special! Got our nails done for
-                                        hen do and it was the best possible start to the weekend!
-                                    </p>
+                                    <div class="testimonial-content">
+                                        <div class="d-flex mb-4">
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5 mb-0 text-white">The staff is absolutely amazing! Talented girls
+                                            who
+                                            made
+                                            both me and my friend seem so special! Got our nails done for
+                                            hen do and it was the best possible start to the weekend!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item rounded p-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="d-flex flex-column mx-auto">
-                                    <div class="rounded-circle mb-4"
-                                        style="border: dashed; border-color: var(--bs-white);">
-                                        <img src="img/fb4.png" class="img-fluid rounded-circle" alt="">
-                                    </div>
-                                    <div class="text-center">
-                                        <h6 class="mb-2 text-primary">Biab with chrome</h6>
+                        <div class="testimonial-item rounded p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="d-flex flex-column mx-auto">
+                                        <div class="rounded-circle mb-4"
+                                            style="border: dashed; border-color: var(--bs-white);">
+                                            <img src="img/fb4.png" class="img-fluid rounded-circle" alt="">
+                                        </div>
+                                        <div class="text-center">
+                                            <h6 class="mb-2 text-primary">Biab with chrome</h6>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="position-absolute" style="top: 20px; right: 25px;">
-                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
-                                </div>
-                                <div class="testimonial-content">
-                                    <div class="d-flex mb-4">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
+                                <div class="col-8">
+                                    <div class="position-absolute" style="top: 20px; right: 25px;">
+                                        <i class="fa fa-quote-right fa-2x text-secondary"></i>
                                     </div>
-                                    <p class="fs-5 mb-0 text-white">I have been going to Posh Nails for a year now for
-                                        BIAB,
-                                        every visit has been a pleasure. I have strong natural nails
-                                        which always look fantastic regardless of what I do day to day. The whole team
-                                        amazing! Thank you.
-                                    </p>
+                                    <div class="testimonial-content">
+                                        <div class="d-flex mb-4">
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                            <i class="fas fa-star text-primary"></i>
+                                        </div>
+                                        <p class="fs-5 mb-0 text-white">I have been going to Posh Nails for a year now
+                                            for
+                                            BIAB,
+                                            every visit has been a pleasure. I have strong natural nails
+                                            which always look fantastic regardless of what I do day to day. The whole
+                                            team
+                                            amazing! Thank you.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Testimonial End -->
+            <!-- Testimonial End -->
 
 
-        <!-- Contact Start -->
-        <div class="container-fluid py-5" id="contactUs">
-            <div class="container py-5">
-                <div class="row g-4 align-items-center">
-                    <div class="col-12 hidden-item ">
-                        <div class="row g-4">
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Address</h4>
-                                        <p class="mb-0">6 Straits Parade, Straits Parade, Bristol</p>
+            <!-- Contact Start -->
+            <div class="container-fluid py-5" id="contactUs">
+                <div class="container py-5">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 hidden-item ">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Address</h4>
+                                            <p class="mb-0">6 Straits Parade, Straits Parade, Bristol</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                        <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Mail Us</h4>
+                                            <p class="mb-0">poshnailsfishponds@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                        <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Telephone</h4>
+                                            <p class="mb-0"> 0117 312 6388</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Mail Us</h4>
-                                        <p class="mb-0">poshnailsfishponds@gmail.com</p>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="rounded">
+                                <iframe class="rounded-top w-100" style="height: 450px; margin-bottom: -6px;"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.703734099554!2d-2.5290311230030986!3d51.48195221256152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718fb70c17877b%3A0x1318f6a7589a6382!2sPosh%20Nails%20Fishponds!5e0!3m2!1svi!2suk!4v1718233632595!5m2!1svi!2suk"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                             </div>
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Telephone</h4>
-                                        <p class="mb-0"> 0117 312 6388</p>
-                                    </div>
+                            <div class=" text-center p-4 rounded-bottom bg-primary">
+                                <h4 class="text-white fw-bold">Follow Us</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="https://www.facebook.com/poshnailsfishponds/?locale=en_GB"
+                                        class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/poshnailsfishponds/"
+                                        class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="https://www.google.com/search?q=posh+nails+fishponds+google+review&oq=po&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIICAEQRRgnGDsyBggCEEUYOzIGCAMQRRg5MgwIBBAAGEMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxNzcxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x48718fb70c17877b:0x1318f6a7589a6382,1,,,,"
+                                        class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                            class="fab fa-google"></i></a>
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="rounded">
-                            <iframe class="rounded-top w-100" style="height: 450px; margin-bottom: -6px;"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.703734099554!2d-2.5290311230030986!3d51.48195221256152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718fb70c17877b%3A0x1318f6a7589a6382!2sPosh%20Nails%20Fishponds!5e0!3m2!1svi!2suk!4v1718233632595!5m2!1svi!2suk"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- Contact End -->
 
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid footer py-5">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item">
+                                <h4 class="mb-4 text-white">Address</h4>
+                                <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 6 Straits
+                                    Parade,
+                                    Straits Parade, BS16 2LA, Bristol</p>
+                            </div>
                         </div>
-                        <div class=" text-center p-4 rounded-bottom bg-primary">
-                            <h4 class="text-white fw-bold">Follow Us</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a href="https://www.facebook.com/poshnailsfishponds/?locale=en_GB"
-                                    class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                                <h4 class="mb-4 text-white">Our Services</h4>
+                                <a href=""><i class="fas fa-angle-right me-2"></i> Nails</a>
+                                <a href=""><i class="fas fa-angle-right me-2"></i> Waxing</a>
+                                <a href=""><i class="fas fa-angle-right me-2"></i> Message</a>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                                <h4 class="mb-4 text-white">Schedule</h4>
+                                <p class="text-muted mb-0">Mon - Fri: <span class="text-white"> 09:00 am – 06:00
+                                        pm</span>
+                                </p>
+                                <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 05:00
+                                        pm</span>
+                                </p>
+                                <p class="text-muted mb-0">Sunday: <span class="text-white"> CLOSED</span></p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                                <h4 class="mb-4 text-white">Contact Us</h4>
+                                <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i>
+                                    poshnailsfishponds@outlook.com
+                                </p>
+                                <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> 0117 312 6388
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+
+
+            <!-- Copyright Start -->
+            <div class="container-fluid copyright py-4">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-4 text-center text-md-start mb-md-0">
+                            <span class="text-black"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Posh
+                                    Nails
+                                    Fishponds</a>, All right reserved.</span>
+                        </div>
+                        <div class="col-md-4 footer-media">
+                            <div class="d-flex justify-content-center">
+                                <a href=""
+                                    class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
                                         class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/poshnailsfishponds/"
-                                    class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a href="https://www.google.com/search?q=posh+nails+fishponds+google+review&oq=po&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIICAEQRRgnGDsyBggCEEUYOzIGCAMQRRg5MgwIBBAAGEMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxNzcxajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x48718fb70c17877b:0x1318f6a7589a6382,1,,,,"
-                                    class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i
+                                <a href=""
+                                    class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
                                         class="fab fa-google"></i></a>
-
+                                <a href=""
+                                    class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
+                                        class="fab fa-instagram"></i></a>
 
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
-
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="mb-4 text-white">Address</h4>
-                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 6 Straits Parade,
-                                Straits Parade, BS16 2LA, Bristol</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Our Services</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Nails</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Waxing</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Message</a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Schedule</h4>
-                            <p class="text-muted mb-0">Mon - Fri: <span class="text-white"> 09:00 am – 06:00 pm</span>
-                            </p>
-                            <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 05:00 pm</span>
-                            </p>
-                            <p class="text-muted mb-0">Sunday: <span class="text-white"> CLOSED</span></p>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Contact Us</h4>
-                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i>
-                                poshnailsfishponds@outlook.com
-                            </p>
-                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> 0117 312 6388
-                            </p>
+                        <div class="col-md-4 text-center text-md-end text-black">
+                            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                            Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">HTML Codex</a>
+                            Distributed By <a class="border-bottom text-light"
+                                href="https://themewagon.com">ThemeWagon</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer End -->
+            <!-- Copyright End -->
 
 
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-black"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Posh Nails
-                                Fishponds</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-4 footer-media">
-                        <div class="d-flex justify-content-center">
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
-                                    class="fab fa-google"></i></a>
-                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i
-                                    class="fab fa-instagram"></i></a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center text-md-end text-black">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-light" href="https://htmlcodex.com">HTML Codex</a>
-                        Distributed By <a class="border-bottom text-light" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
+                    class="fa fa-arrow-up"></i></a>
 
 
+            <!-- JavaScript Libraries -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/counterup/counterup.min.js"></script>
+            <script src="lib/lightbox/js/lightbox.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i
-                class="fa fa-arrow-up"></i></a>
-
-
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
 </body>
 
 </html>

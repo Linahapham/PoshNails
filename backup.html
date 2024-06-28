@@ -1,0 +1,725 @@
+<!--New gallery template WORKING-->
+<div class="gallery-container container-fluid gallery">
+    <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+        <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+        <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
+    </div>
+
+        <div class="gallery-filters">
+            <button class="gallery-filter-btn" data-filter="all">All</button>
+            <button class="gallery-filter-btn" data-filter="chrome">Chrome</button>
+            <button class="gallery-filter-btn" data-filter="flower">Flower</button>
+            <button class="gallery-filter-btn" data-filter="acrylic">Acrylic</button>
+            <button class="gallery-filter-btn" data-filter="french">French</button>
+        </div>
+        <div class="gallery">
+            <!-- Images -->
+            <div class="gallery-image" data-category="chrome">
+                <img src="./img/chr1.png" alt="Chrome Image">
+            </div>
+            <div class="gallery-image" data-category="chrome">
+                <img src="./img/chr1.png" alt="Chrome Image">
+            </div>
+            <div class="gallery-image" data-category="chrome">
+                <img src="./img/chr1.png" alt="Chrome Image">
+            </div>
+
+            <div class="gallery-image" data-category="flower">
+                <img src="./img/fl1.png" alt="Flower Image">
+            </div>
+            <div class="gallery-image" data-category="flower">
+                <img src="./img/fl1.png" alt="Flower Image">
+            </div>
+            <div class="gallery-image" data-category="flower">
+                <img src="./img/fl1.png" alt="Flower Image">
+            </div>
+            <div class="gallery-image" data-category="flower">
+                <img src="./img/fl1.png" alt="Flower Image">
+            </div>
+
+            <div class="gallery-image" data-category="acrylic">
+                <img src="./img/acrylic.png" alt="Acrylic Image">
+            </div>
+            <div class="gallery-image" data-category="acrylic">
+                <img src="./img/acrylic.png" alt="Acrylic Image">
+            </div>
+
+            <div class="gallery-image" data-category="french">
+                <img src="./img/fb1.png" alt="French Image">
+            </div>
+            <div class="gallery-image" data-category="french">
+                <img src="./img/fb1.png" alt="French Image">
+            </div>
+        </div>
+        <div class="gallery-actions text-center">
+            <button class="btn btn-primary text-center" id="show-more-less-btn" style=" margin-left: auto;
+margin-right: auto;">Show More</button>
+        </div>
+    </div>
+
+
+
+    <!--Old galleries-->
+
+    <!-- Gallery Start -->
+    <div class="container-fluid gallery py-5" id="gallery">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+                <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                            data-bs-toggle="pill" href="#all" data-filter="all">
+                            <span class="text-dark" style="width: 150px;">All Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill"
+                            data-bs-toggle="pill" href="#chrome" data-filter="chrome">
+                            <span class="text-dark" style="width: 150px;">Chrome Nails</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill"
+                            data-bs-toggle="pill" href="#flower" data-filter="flower">
+                            <span class="text-dark" style="width: 150px;">Flower Nails</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill"
+                            data-bs-toggle="pill" href="#acrylic" data-filter="acrylic">
+                            <span class="text-dark" style="width: 150px;">Acrylic Design</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill"
+                            data-bs-toggle="pill" href="#french" data-filter="french">
+                            <span class="text-dark" style="width: 150px;">French Tips</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="all" class="tab-pane fade show active p-0">
+                        <div class="row g-4 gallery-content">
+                            <!-- Gallery Items -->
+                            <!-- chrome Items -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/chr1.png" alt="Chrome Nails">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/chr2.png" alt="Chrome Nails">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/chr3.png" alt="Chrome Nails">
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/chr4.png" alt="Chrome Nails">
+
+                                </div>
+
+                            </div>
+                            <!-- flowers Items -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl1.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower ">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl2.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl3.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl4.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <!-- acrylic Items -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/om1.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/om2.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/om3.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/om4.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <!-- french tips Items -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/french1.png" alt="French Tips">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/french2.png" alt="French Tips">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/french3.png" alt="French Tips">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/french4.png" alt="French Tips">
+                                </div>
+                            </div>
+                            <!-- Hidden Items Initially -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item chrome hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g5.png" alt="Chrome Nails">
+                                </div>
+                            </div>
+                            <!-- flowers Items -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl5.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl6.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl7.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item flower hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/fl8.png" alt="Flower Nails">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g7.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item acrylic hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/french8.png" alt="Acrylic Design">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 gallery-item french hidden-item">
+                                <div class="gallery-img">
+                                    <img class="img-fluid rounded w-100" src="img/g8.png" alt="French Tips">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button id="seeMoreBtn" class="btn btn-primary text-center"
+                                data-target="gallery-content">See
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Gallery Start 
+<div class="container-fluid gallery py-5" id="gallery">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+            <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+            <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                <li class="nav-item">
+                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active"
+                        data-bs-toggle="pill" href="#tab-1">
+                        <span class="text-dark" style="width: 150px;">All Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                        href="#tab-2">
+                        <span class="text-dark" style="width: 150px;">chrome nails</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                        href="#tab-3">
+                        <span class="text-dark" style="width: 150px;">flower nails</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                        href="#tab-4">
+                        <span class="text-dark" style="width: 150px;">acrylic design</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                        href="#tab-5">
+                        <span class="text-dark" style="width: 150px;">french tips</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g1.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g1.png" data-lightbox="Gallery-1" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g2.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g2.png" data-lightbox="Gallery-2" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g3.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g3.png" data-lightbox="Gallery-3" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g4.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g4.png" data-lightbox="Gallery-4" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g5.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g5.png" data-lightbox="Gallery-5" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g6.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g6.png" data-lightbox="Gallery-6" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g7.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g7.png" data-lightbox="Gallery-7" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/g8.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/g8.png" data-lightbox="Gallery-8" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/chr1.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/chr1.png" data-lightbox="Gallery-9" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/chr2.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/chr2.png" data-lightbox="Gallery-10" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/chr3.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/chr3.png" data-lightbox="Gallery-11" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/chr4.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/chr4.png" data-lightbox="Gallery-12" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl1.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl1.png" data-lightbox="Gallery-1" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl2.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl2.png" data-lightbox="Gallery-2" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl3.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl3.png" data-lightbox="Gallery-3" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl4.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl4.png" data-lightbox="Gallery-4" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl5.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl5.png" data-lightbox="Gallery-5" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl6.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl6.png" data-lightbox="Gallery-6" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl7.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl7.png" data-lightbox="Gallery-7" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/fl8.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/fl8.png" data-lightbox="Gallery-8" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-4" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/om1.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/om1.png" data-lightbox="Gallery-17" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/om2.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/om2.png" data-lightbox="Gallery-18" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/om3.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/om3.png" data-lightbox="Gallery-19" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/om4.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/om4.png" data-lightbox="Gallery-20" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-5" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="row g-4">
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french1.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french1.png" data-lightbox="Gallery-21" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french2.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french2.png" data-lightbox="Gallery-22" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french3.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french3.png" data-lightbox="Gallery-23" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french4.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french4.png" data-lightbox="Gallery-24" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french5.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french5.png" data-lightbox="Gallery-25" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french6.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french6.png" data-lightbox="Gallery-26" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french7.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french7.png" data-lightbox="Gallery-26" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="gallery-img">
+                                        <img class="img-fluid rounded w-100" src="img/french8.png" alt="">
+                                        <div class="gallery-overlay p-4">
+
+                                        </div>
+                                        <div class="search-icon">
+                                            <a href="img/french8.png" data-lightbox="Gallery-26" class="my-auto"><i
+                                                    class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <!-- gallery End -->
