@@ -144,6 +144,10 @@
     .hide-desktop {
         display: inline !important;
     }
+
+    .hide-phone{
+        display: none !important;
+    }
 }
 
 .hidden-item {
@@ -154,6 +158,9 @@
     display: none;
 }
 
+.hide-phone{
+    display: inline;
+}
 
 
 @media (min-width: 768px) {
