@@ -1,3 +1,8 @@
+@media (max-width: 767.98px) {
+    .phone-size {
+        font-size: 20px;
+    }}
+
 /*price list img*/
 .pricelist img {
     max-width: 100%;
