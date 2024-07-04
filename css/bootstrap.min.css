@@ -3139,8 +3139,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #A5907E;
-    border-color: #96705B
+    background-color: #F7B32B;
+    border-color: #F7B32B
 }
 
 .btn-primary:hover {
@@ -3819,12 +3819,12 @@ fieldset:disabled .btn {
 
 .btn-link {
     font-weight: 400;
-    color: #ff4f9d;
+    color: #F7CE5B;
     text-decoration: none
 }
 
 .btn-link:hover {
-    color: #cc3f7e
+    color: #F7CE5B
 }
 
 .btn-link:disabled,
@@ -8344,7 +8344,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #A5907E !important
+    color: #F7B32B !important
 }
 
 .text-secondary {
