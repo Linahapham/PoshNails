@@ -18,7 +18,7 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: #96705B;
+    --bs-primary: #F7B32B;
     --bs-secondary: #AB8476;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -7367,7 +7367,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #99621E !important
+    border-color: #F7B32B !important
 }
 
 .border-secondary {
