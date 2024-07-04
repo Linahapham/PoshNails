@@ -1,7 +1,12 @@
+.bg-map {
+    background-color: #96705B;
+}
+
 @media (max-width: 767.98px) {
     .phone-size {
         font-size: 20px;
-    }}
+    }
+}
 
 /*price list img*/
 .pricelist img {
@@ -145,7 +150,7 @@
         display: inline !important;
     }
 
-    .hide-phone{
+    .hide-phone {
         display: none !important;
     }
 }
@@ -158,7 +163,7 @@
     display: none;
 }
 
-.hide-phone{
+.hide-phone {
     display: inline;
 }
 
