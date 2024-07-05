@@ -418,7 +418,7 @@
 
 .services .services-item:hover {
     background: var(--bs-primary) !important;
-    border-color: var(--bs-secondary) !important;
+    border-color: #000000;
 }
 
 .services .services-item:hover .services-content p,
