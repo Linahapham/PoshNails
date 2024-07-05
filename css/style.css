@@ -253,12 +253,12 @@
 }
 
 .btn-primary-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: #9e7013;
     color: var(--bs-white) !important;
 }
 
 .btn-light-outline-0:hover {
-    background: var(--bs-secondary) !important;
+    background: #9e7013;
     color: var(--bs-white) !important;
 }
 
