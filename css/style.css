@@ -418,7 +418,7 @@
 
 .services .services-item:hover {
     background: var(--bs-primary) !important;
-    border-color: #000000;
+    border-color: var(--bs-secondary) !important;
 }
 
 .services .services-item:hover .services-content p,
@@ -789,7 +789,7 @@
 
 /*** testimonial Start ***/
 .testimonial {
-    background: #FCEFFC;
+    background: #fff0d0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
