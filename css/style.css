@@ -1,3 +1,88 @@
+/*trial*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the container */
+    z-index: -1;
+    /* Place the image behind the text */
+}
+
+
+.bg-title {
+    color: white;
+    font-size: 5vw;
+    /* This will make the font size responsive */
+    position: relative;
+    z-index: 1;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+}
+
+.btn-responsive {
+    font-size: 1.5vw;
+    /* Responsive font size */
+}
+
+@media only screen and (max-width: 767px) {
+    .bg-image-container {
+        height: 500px;
+        margin-bottom: 10px;
+    }
+
+    .bg-title {
+        font-size: 10vw;
+    }
+
+    .button-container {
+
+        position: absolute;
+        flex-direction: column;
+        bottom: 20px;
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+    }
+
+    .btn-responsive {
+        font-size: 1.5vw;
+        padding: 10px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+
+
+/*m*/
 .bg-map {
     background-color: #F7B32B;
 }
