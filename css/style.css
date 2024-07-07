@@ -62,18 +62,25 @@ html {
     }
 
     .button-container {
-
         position: absolute;
-        flex-direction: column;
         bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        /* Center the container horizontally */
         display: flex;
+        justify-content: center;
+        /* Center buttons horizontally */
         gap: 20px;
         z-index: 1;
     }
 
+
+
     .btn-responsive {
         font-size: 1.5vw;
-        padding: 10px 20px;
+        padding: 8px 16px;
         text-align: center;
         align-items: center;
     }
