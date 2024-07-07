@@ -102,6 +102,20 @@ html {
 
 }
 
+/* Hide element on desktop */
+@media (min-width: 992px) {
+    .desktop-hide {
+        display: none;
+    }
+}
+
+/* Show element on mobile */
+@media (max-width: 991px) {
+    .desktop-hide {
+        display: block;
+    }
+}
+
 /*price list img*/
 .pricelist img {
     max-width: 100%;
